@@ -1,0 +1,44 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/spring/applicationContext.xml</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>VaadinServlet</servlet-name>
+		<servlet-class>ru.xpoft.vaadin.SpringVaadinServlet</servlet-class>
+		<init-param>
+			<param-name>beanName</param-name>
+			<!-- This is the name of your main Vaadin UI class. You should declare 
+				it as a prototype-scoped component (e.g. @Component @Scope("protoype")). -->
+			<param-value>myVaadinUI</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VaadinServlet</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
+
+	<servlet>
+		<display-name>Servlet1</display-name>
+		<servlet-name>Servlet1</servlet-name>
+		<servlet-class>com.prototype.vaadin.web.servlet.InitServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+</web-app>

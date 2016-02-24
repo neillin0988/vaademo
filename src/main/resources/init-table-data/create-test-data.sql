@@ -1,0 +1,10 @@
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('ort002', 'ort002', 'ort', 'Y', 2, 'ort002Component', 'No. 10: 靈異第六感(1999)', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('ort001', 'ort001', 'ort', 'Y', 1, 'ort001Component', '十大驚悚指數爆表鬼片！咒怨只排第二', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('sys', 'sys', null, 'Y', 1, null, 'system', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('ort', 'ort', null, 'Y', 2, null, 'ort', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('ord', 'ord', null, 'Y', 3, null, 'ord', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('ord001', 'ord001', 'ord', 'Y', 1, null, 'ord001', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('sys001', 'sys001', 'sys', 'Y', 2, 'menuMantian', '功能選單維護作業', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('sys002', 'sys002', 'sys', 'Y', 3, 'sys002Query', 'sys002', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('sys003', 'sys003', 'sys', 'Y', 1, 'nativeSqlQuery', 'SQL 查詢介面', 'system', '2014-08-07', null, null);
+insert into menu (uuid, key, parentkey, isalive, sort, component, name, creator, createdate, editor, editdate) values ('sys004', 'sys004', 'sys', 'Y', 1, 'sys004Query', 'BLR_S_FLOW_SETTING', 'system', '2014-08-07', null, null);
